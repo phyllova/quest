@@ -100,3 +100,26 @@
             vertical-align: middle;
             margin-right: 10px;
         }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        .wrapper {
+            width: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 20px;
+        }
