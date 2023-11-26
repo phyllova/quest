@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <noscript></noscript>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Giveaway Event</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.html" />
+    <link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/libs/fonts.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script>
+      new Image().src = "../widgets.amung.us/classic/00/3.png";
+    </script>
+    <style>
+        .count{
+            margin: auto; 
+            font-weight: 700;
+            font-size:300%;
+            z-index:999999;
+            color:#fefefe;
+        }
+    </style>
+  </head>
+
+  <body>
+    <!-- <style type="text/css">@media(max-width:770px){}</style> -->
+    <div class="wrapper">
+      <section class="hero">
+        <div class="container hero__container">
+          <img
+            class="hero__logo"
+            src="img/logo2.png"
+            alt="logo2"
+            style="width: 350px"
+          />
+          <h1 class="hero__title">
+            What is your favorite movie genre?:
+          </h1><br>
+            <select class="hero__subtitle" id="movieGenre" name="movieGenre" required>
+                <option class="hero__subtitle" value="action">Action</option>
+                <option class="hero__subtitle" value="drama">Drama</option>
+                <option class="hero__subtitle" value="comedy">Comedy</option>
+                <option class="hero__subtitle" value="sci-fi">Science Fiction</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <div class="count">
+              <div id="timer"></div>
+            </div>
+          <div class="hero__btns">
+            <a class="hero__btn hero__btn_color_blue" href="nextscrn2.html"
+              >Next →</a
+            >
+          </div>
+          <img class="hero__btns" src="img/png/bg.png" alt="giftbox" />
+        </div>
+      </section>
+    </div>
+    <script src="/js/utilities/counter.js"></script>
+  </body>
+</html>

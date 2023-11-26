@@ -1,0 +1,161 @@
+body {
+    background-color: var(--bg);
+    height: 100vh;
+    margin-left: 15px;
+}
+
+#fbp {
+    background-color: var(--bg);
+    height: 100vh;
+    margin-left: 15px;
+}
+
+.fb-user{display:flex;flex-direction:column
+}
+.fb-group{background:#fff;}
+@media (max-width: 449px){
+    .fb-group{background:inherit;border:none}
+}
+.fb-panel{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 40px 0
+
+}
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.align-center{
+    display: flex;
+    align-items: center;
+}
+.justify-center{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+
+}
+.container{
+    border: ;
+    
+}
+.content {
+    height: 100%;
+    padding: auto 0;
+    padding-top: 15%;
+}
+.content img{
+    margin-left: 15px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+.content p{
+    margin-left: 15px;
+    font-size: 18px;
+    line-height: 26px;
+}
+.login-form {
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+input{
+    border: 1px solid #DDDFE2;
+    margin-top: 15px;
+    padding: 14px;
+    border-radius: 5px;
+}
+input:focus {
+    border: 1px solid #1877F2;
+    outline: none;
+}
+#fb-log {
+    background-color: var(--brand1);
+    width: 90%;
+    font-size: 16px;
+    margin-top: 15px;
+}
+#create-btn{
+    background-color: #36A420;
+    width: 50%;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    
+}
+#fb-log,
+#create-btn {
+    
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: normal;
+    border: none;
+}
+.login-form form > a{
+    margin-top: 15px;
+    height: 35px;
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--brand1);
+    font-size: 16px;
+    position: relative;
+    
+}
+.login-form form > a:hover {
+    text-decoration: underline;
+    
+}
+.login-form form > a::after{
+    position: absolute;
+    height: 1px;
+    content: "";
+    width: 100%;
+    bottom:0;
+    left: 0;
+    background-color: #DADDE1;
+    color: blue;
+
+}
+footer{
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 15px;
+}
+footer a:hover {
+    text-decoration: underline !important;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) { 
+    .col-xs-12{
+        width: calc(8.333333333333334%*12);
+        flex: calc(8.333333333333334%*12);
+        margin-left: 15px;
+    }
+    .content{
+        display: none;
+    }
+    .login-form {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    margin-left: 15px;
+
+ }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { ... }
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { ... }
