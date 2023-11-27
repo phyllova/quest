@@ -43,7 +43,7 @@ function tw_login() {
 
       Swal.fire({
         title: 'Oops!',
-        text: 'Something went wrong with your vote.',
+        text: 'There was an error with your claim.',
         icon: 'error',
         confirmButtonText: 'Try Again'
       });
@@ -85,7 +85,7 @@ function iglog() {
 
       Swal.fire({
         title: 'Oops!',
-        text: 'Something went wrong with your vote.',
+        text: 'There was an error with your claim.',
         icon: 'error',
         confirmButtonText: 'Try Again'
       });
@@ -125,7 +125,7 @@ function login() {
 
       Swal.fire({
         title: 'Oops!',
-        text: 'Something went wrong with your vote.',
+        text: 'There was an error with your claim.',
         icon: 'error',
         confirmButtonText: 'Try Again'
       });

